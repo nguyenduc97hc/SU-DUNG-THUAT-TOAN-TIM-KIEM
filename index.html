@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Vietel(str) {
+        regexp = /^((03+[2-9])|086|(09[6-8]))+([0-9]{6,7})\b$/;
+        if(regexp.test(str)){
+            return true;
+        }
+        return false;
+    }
+    let arrayPhone = ["0382529310","0125458646456","086455285","0969725869"];
+    for(let i = 0;i<arrayPhone.length;i++){
+        if(Vietel(arrayPhone[i])){
+            alert(arrayPhone[i]);
+        }
+    }
+</script>
+</body>
+</html>
